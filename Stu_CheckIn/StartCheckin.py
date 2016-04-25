@@ -1,6 +1,8 @@
  # -*- coding:utf-8 -*-
  """
- 详细设计
+Author : RayYu
+Time :  2016/04/19
+详细设计
 def StartCheckin(teacherWechatID,CourseID):
 	1) 记录考勤开始时间，更新Timer；
 	2) 设置一个列表记录当前教师课程队列；
@@ -77,3 +79,5 @@ def StartCheckin(teacherWechatID,CourseID):
 		writer = csv.writer(csvfile)
    		writer.writerow(['StuID', 'checkinTime', 'ProofPath','checkinType','IsSucc','checkinResult')
    	csvfile.close()
+
+   	
